@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="section">
+        <p class="text"><span class="active">민조능모루게썽</span> 
+        dhdltlznskfp dhdltlznskfp ahdp ahdp Rbd!
+        gkrry skrkrhtlvdj wnrrpTek wlsWkfh
+        skfTlrk skan sjan whgdk bbbb 
+        sork dho durlTdjdigksmswl gkskeh ahfmrpTejems
+        wjswpwns qkqhsp wlsWkfh
+            dhdltlznskfp dhdltlznskfp ahdp ahdp Rbd!</p>
+        </div>
+
+        <script>const text = document.querySelector('.text');
+            text.innerHTML = text.textContent.replace(/\S/g, "<span>$&</span>");
+
+            const letters = document.querySelectorAll('span');
+            let isSmoking = false;
+            window.addEventListener('mousedown', function() {
+                isSmoking = true;
+            });
+
+            window.addEventListener('mouseup', function() {
+                isSmoking = false;
+            });
+
+            for (let i=0; i<letters.length; i++) {
+                letters[i].addEventListener('mouseover', function() {
+                    if(isSmoking) {
+                        letters[i].classList.add('active');
+                }
+
+                });
+            }
+        </script>
+
+        </body>
+
+</html>
+            
